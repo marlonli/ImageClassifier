@@ -87,7 +87,7 @@ def main(unused_argv):
     # print("Preprocessing finished")
 
     # Create the estimator
-    cifar10_classifier = tf.estimator.Estimator(cnn_model_fn, model_dir="/tmp/convnet_model2")
+    cifar10_classifier = tf.estimator.Estimator(cnn_model_fn, model_dir="/tmp/convnet_model")
 
     # Set up logging for predictions
     tensors_to_log = {"probabilities": "softmax_tensor"}
